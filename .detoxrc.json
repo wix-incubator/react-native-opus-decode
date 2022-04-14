@@ -1,0 +1,24 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "e2e/config.json",
+  "skipLegacyWorkersInjection": true,
+  "devices": {
+  "simulator": {
+    "type": "ios.simulator",
+      "device": {
+      "type": "iPhone 12 Pro Max"
+    }
+  }
+},
+  "apps": {
+    "ios.release": {
+      "type": "ios.app",
+      "binaryPath": "./example/ios/DerivedData/Build/Products/Debug-iphonesimulator/OpusDecodeExample.app"}
+  },
+  "configurations": {
+  "ios.sim.release": {
+    "device": "simulator",
+      "app": "ios.release"
+  }
+}
+}

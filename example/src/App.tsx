@@ -1,18 +1,21 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-opus-decode';
+import { decodeOpus } from 'react-native-opus-decode';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    decodeOpus('https://filesamples.com/samples/audio/opus/sample4.opus').then(
+      setResult
+    );
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text testID={'DECODE_RESULT'}>{result ? 'SUCCESS' : ''}</Text>
+      <Text testID={'DECODE_OUTPUT'}>{result}</Text>
     </View>
   );
 }

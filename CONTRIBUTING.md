@@ -20,12 +20,6 @@ To start the packager:
 yarn example start
 ```
 
-To run the example app on Android:
-
-```sh
-yarn example android
-```
-
 To run the example app on iOS:
 
 ```sh
@@ -53,8 +47,6 @@ yarn test
 
 To edit the Objective-C files, open `example/ios/OpusDecodeExample.xcworkspace` in XCode and find the source files at `Pods > Development Pods > react-native-opus-decode`.
 
-To edit the Kotlin files, open `example/android` in Android studio and find the source files at `reactnativeopusdecode` under `Android`.
-
 ### Commit message convention
 
 We follow the [conventional commits specification](https://www.conventionalcommits.org/en) for our commit messages:
@@ -76,12 +68,6 @@ We use [TypeScript](https://www.typescriptlang.org/) for type checking, [ESLint]
 
 Our pre-commit hooks verify that the linter and tests pass when committing.
 
-### Publishing to npm
-
-We use [release-it](https://github.com/release-it/release-it) to make it easier to publish new versions. It handles common tasks like bumping version based on semver, creating tags and releases etc.
-
-To publish new versions, run the following:
-
 ```sh
 yarn release
 ```
@@ -95,7 +81,6 @@ The `package.json` file contains various scripts for common tasks:
 - `yarn lint`: lint files with ESLint.
 - `yarn test`: run unit tests with Jest.
 - `yarn example start`: start the Metro server for the example app.
-- `yarn example android`: run the example app on Android.
 - `yarn example ios`: run the example app on iOS.
 
 ### Sending a pull request

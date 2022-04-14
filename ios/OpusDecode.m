@@ -1,19 +1,20 @@
 #import "OpusDecode.h"
+#import "decoder.h"
 
 @implementation OpusDecode
 
 RCT_EXPORT_MODULE()
 
-// Example method
-// See // https://reactnative.dev/docs/native-modules-ios
-RCT_REMAP_METHOD(multiply,
-                 multiplyWithA:(nonnull NSNumber*)a withB:(nonnull NSNumber*)b
+RCT_REMAP_METHOD(decodeFromUri,
+                 withSourceFile:(nonnull NSString*)sourceFile
+                 withSourceFile:(nonnull NSString*)destFile
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {
-  NSNumber *result = @([a floatValue] * [b floatValue]);
-
-  resolve(result);
+    const char *fileNameIn=[sourceFile UTF8String];
+    const char *filenameOut=[destFile UTF8String];
+    decodeOpus(fileNameIn, filenameOut);
+    resolve(destFile);
 }
 
 @end
