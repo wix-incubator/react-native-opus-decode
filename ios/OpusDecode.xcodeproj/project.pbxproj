@@ -6,6 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4EDDB5E32807EA3A00B353DF /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDDB5CC2807EA3A00B353DF /* Ogg.framework */; };
+		4EDDB5E42807EA3A00B353DF /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDDB5D62807EA3A00B353DF /* libopus.a */; };
+		4EDDB5E52807EA3A00B353DF /* opusfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5D92807EA3A00B353DF /* opusfile.c */; };
+		4EDDB5E62807EA3A00B353DF /* info.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5DA2807EA3A00B353DF /* info.c */; };
+		4EDDB5E72807EA3A00B353DF /* internal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5DE2807EA3A00B353DF /* internal.c */; };
+		4EDDB5E82807EA3A00B353DF /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5DF2807EA3A00B353DF /* http.c */; };
+		4EDDB5E92807EA3A00B353DF /* wincerts.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5E02807EA3A00B353DF /* wincerts.c */; };
+		4EDDB5EA2807EA3A00B353DF /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5E12807EA3A00B353DF /* stream.c */; };
+		4EDDB5EF2807EA4E00B353DF /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5EE2807EA4E00B353DF /* decoder.c */; };
+		4EDDB5F22807EAE000B353DF /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5F02807EAE000B353DF /* decoder.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +33,27 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libOpusDecode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpusDecode.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EDDB5CC2807EA3A00B353DF /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ogg.framework; sourceTree = "<group>"; };
+		4EDDB5D02807EA3A00B353DF /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		4EDDB5D12807EA3A00B353DF /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		4EDDB5D22807EA3A00B353DF /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		4EDDB5D32807EA3A00B353DF /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		4EDDB5D42807EA3A00B353DF /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_projection.h; sourceTree = "<group>"; };
+		4EDDB5D62807EA3A00B353DF /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		4EDDB5D82807EA3A00B353DF /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		4EDDB5D92807EA3A00B353DF /* opusfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opusfile.c; sourceTree = "<group>"; };
+		4EDDB5DA2807EA3A00B353DF /* info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = info.c; sourceTree = "<group>"; };
+		4EDDB5DC2807EA3A00B353DF /* opusfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opusfile.h; sourceTree = "<group>"; };
+		4EDDB5DD2807EA3A00B353DF /* winerrno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winerrno.h; sourceTree = "<group>"; };
+		4EDDB5DE2807EA3A00B353DF /* internal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = internal.c; sourceTree = "<group>"; };
+		4EDDB5DF2807EA3A00B353DF /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http.c; sourceTree = "<group>"; };
+		4EDDB5E02807EA3A00B353DF /* wincerts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wincerts.c; sourceTree = "<group>"; };
+		4EDDB5E12807EA3A00B353DF /* stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stream.c; sourceTree = "<group>"; };
+		4EDDB5EC2807EA4200B353DF /* File.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = File.ogg; sourceTree = "<group>"; };
+		4EDDB5ED2807EA4E00B353DF /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
+		4EDDB5EE2807EA4E00B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
+		4EDDB5F02807EAE000B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
+		4EDDB5F12807EAE000B353DF /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* OpusDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpusDecode.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* OpusDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpusDecode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -29,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDDB5E42807EA3A00B353DF /* libopus.a in Frameworks */,
+				4EDDB5E32807EA3A00B353DF /* Ogg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,9 +79,78 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4EDDB5CD2807EA3A00B353DF /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDB5CE2807EA3A00B353DF /* include */,
+				4EDDB5D52807EA3A00B353DF /* lib */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		4EDDB5CE2807EA3A00B353DF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDB5CF2807EA3A00B353DF /* opus */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4EDDB5CF2807EA3A00B353DF /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDB5D02807EA3A00B353DF /* opus.h */,
+				4EDDB5D12807EA3A00B353DF /* opus_multistream.h */,
+				4EDDB5D22807EA3A00B353DF /* opus_types.h */,
+				4EDDB5D32807EA3A00B353DF /* opus_defines.h */,
+				4EDDB5D42807EA3A00B353DF /* opus_projection.h */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		4EDDB5D52807EA3A00B353DF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDB5D62807EA3A00B353DF /* libopus.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4EDDB5D72807EA3A00B353DF /* opusfile */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDB5EE2807EA4E00B353DF /* decoder.c */,
+				4EDDB5ED2807EA4E00B353DF /* decoder.h */,
+				4EDDB5D82807EA3A00B353DF /* internal.h */,
+				4EDDB5D92807EA3A00B353DF /* opusfile.c */,
+				4EDDB5DA2807EA3A00B353DF /* info.c */,
+				4EDDB5DB2807EA3A00B353DF /* Include */,
+				4EDDB5DD2807EA3A00B353DF /* winerrno.h */,
+				4EDDB5DE2807EA3A00B353DF /* internal.c */,
+				4EDDB5DF2807EA3A00B353DF /* http.c */,
+				4EDDB5E02807EA3A00B353DF /* wincerts.c */,
+				4EDDB5E12807EA3A00B353DF /* stream.c */,
+			);
+			path = opusfile;
+			sourceTree = "<group>";
+		};
+		4EDDB5DB2807EA3A00B353DF /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDB5DC2807EA3A00B353DF /* opusfile.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				4EDDB5CC2807EA3A00B353DF /* Ogg.framework */,
+				4EDDB5CD2807EA3A00B353DF /* opus */,
+				4EDDB5D72807EA3A00B353DF /* opusfile */,
+				4EDDB5EC2807EA4200B353DF /* File.ogg */,
+				4EDDB5F02807EAE000B353DF /* decoder.c */,
+				4EDDB5F12807EAE000B353DF /* decoder.h */,
 				B3E7B5881CC2AC0600A0062D /* OpusDecode.h */,
 				B3E7B5891CC2AC0600A0062D /* OpusDecode.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -109,6 +214,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDDB5F22807EAE000B353DF /* decoder.c in Sources */,
+				4EDDB5E52807EA3A00B353DF /* opusfile.c in Sources */,
+				4EDDB5E62807EA3A00B353DF /* info.c in Sources */,
+				4EDDB5E92807EA3A00B353DF /* wincerts.c in Sources */,
+				4EDDB5EF2807EA4E00B353DF /* decoder.c in Sources */,
+				4EDDB5E72807EA3A00B353DF /* internal.c in Sources */,
+				4EDDB5E82807EA3A00B353DF /* http.c in Sources */,
+				4EDDB5EA2807EA3A00B353DF /* stream.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,5 @@
 #import "OpusDecode.h"
+#import "decoder.h"
 
 @implementation OpusDecode
 
@@ -12,6 +13,16 @@ RCT_REMAP_METHOD(multiply,
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {
   NSNumber *result = @([a floatValue] * [b floatValue]);
+    
+    
+    //
+    NSString *str = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"File.ogg"];
+    const char *cfilename=[str UTF8String];
+    
+    NSString *str_out = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"File.wav"];
+    const char *cfilename_out=[str_out UTF8String];
+
+  decodeOpus(cfilename, cfilename_out);
 
   resolve(result);
 }
