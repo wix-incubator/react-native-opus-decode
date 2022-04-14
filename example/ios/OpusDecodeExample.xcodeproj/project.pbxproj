@@ -54,7 +54,6 @@
 		4E08493D28084822006721BA /* File.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = File.ogg; path = ../../ios/File.ogg; sourceTree = "<group>"; };
 		4EDDB5F32807EC6D00B353DF /* libreact-native-opus-decode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-opus-decode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDDB5F52808198A00B353DF /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = ../../ios/Ogg.framework; sourceTree = "<group>"; };
-		4EDDB5F62808198A00B353DF /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vorbis.framework; path = ../../ios/Vorbis.framework; sourceTree = "<group>"; };
 		612E64CAFB7E443BD1310C0D /* libPods-OpusDecodeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpusDecodeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = OpusDecodeExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F45522861ECCD39AD418CD /* Pods-OpusDecodeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpusDecodeExample.debug.xcconfig"; path = "Target Support Files/Pods-OpusDecodeExample/Pods-OpusDecodeExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				4EDDB5F52808198A00B353DF /* Ogg.framework */,
-				4EDDB5F62808198A00B353DF /* Vorbis.framework */,
 				4EDDB5F32807EC6D00B353DF /* libreact-native-opus-decode.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
