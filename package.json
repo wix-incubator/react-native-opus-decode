@@ -10,12 +10,10 @@
   "files": [
     "src",
     "lib",
-    "android",
     "ios",
     "cpp",
     "react-native-opus-decode.podspec",
     "!lib/typescript/example",
-    "!android/build",
     "!ios/build",
     "!**/__tests__",
     "!**/__fixtures__",

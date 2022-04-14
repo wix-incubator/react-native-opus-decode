@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "12.0" }
-  s.source       = { :git => "https://github.com/doronpr/react-native-opus-decode.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/wix-incubator/react-native-opus-decode.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,c}"
 
