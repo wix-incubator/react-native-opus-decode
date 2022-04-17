@@ -141,5 +141,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "react-native-fs": "^2.19.0"
   }
 }

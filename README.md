@@ -11,11 +11,11 @@ npm install react-native-opus-decode
 ## Usage
 
 ```js
-import { multiply } from "react-native-opus-decode";
+import { decodeOpus } from 'react-native-opus-decode';
 
 // ...
 
-const result = await multiply(3, 7);
+const localWavPath = await decodeOpus('https://filesamples.com/samples/audio/opus/sample4.opus');
 ```
 
 ## Contributing

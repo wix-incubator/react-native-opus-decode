@@ -1,4 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
+import RNFS from 'react-native-fs';
 
 const LINKING_ERROR =
   `The package 'react-native-opus-decode' doesn't seem to be linked. Make sure: \n\n` +
@@ -17,6 +18,15 @@ const OpusDecode = NativeModules.OpusDecode
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return OpusDecode.multiply(a, b);
+export async function decodeOpus(
+  sourceUri: string,
+): Promise<string | undefined> {
+  const sourcePath = `${RNFS.CachesDirectoryPath}/tmp.opus`;
+  const destPath = `${RNFS.CachesDirectoryPath}/tmp.wav`;
+  const downloadResult = RNFS.downloadFile({
+    fromUrl: sourceUri,
+    toFile: sourcePath,
+  });
+  await downloadResult.promise;
+  return OpusDecode.decodeFromUri(sourcePath, destPath);
 }
