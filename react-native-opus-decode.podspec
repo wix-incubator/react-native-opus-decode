@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.name         = "react-native-opus-decode"
   s.version      = package["version"]
   s.summary      = package["description"]
+  s.authors      = "Doron Pearl, Wix.com"
   s.homepage     = package["homepage"]
   s.license      = package["license"]
   s.authors      = package["author"]
