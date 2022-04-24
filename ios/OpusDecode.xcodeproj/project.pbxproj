@@ -49,7 +49,6 @@
 		4EDDB5DF2807EA3A00B353DF /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http.c; sourceTree = "<group>"; };
 		4EDDB5E02807EA3A00B353DF /* wincerts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wincerts.c; sourceTree = "<group>"; };
 		4EDDB5E12807EA3A00B353DF /* stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stream.c; sourceTree = "<group>"; };
-		4EDDB5EC2807EA4200B353DF /* File.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = File.ogg; sourceTree = "<group>"; };
 		4EDDB5ED2807EA4E00B353DF /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
 		4EDDB5EE2807EA4E00B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
 		4EDDB5F02807EAE000B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
@@ -148,7 +147,6 @@
 				4EDDB5CC2807EA3A00B353DF /* Ogg.framework */,
 				4EDDB5CD2807EA3A00B353DF /* opus */,
 				4EDDB5D72807EA3A00B353DF /* opusfile */,
-				4EDDB5EC2807EA4200B353DF /* File.ogg */,
 				4EDDB5F02807EAE000B353DF /* decoder.c */,
 				4EDDB5F12807EAE000B353DF /* decoder.h */,
 				B3E7B5881CC2AC0600A0062D /* OpusDecode.h */,
