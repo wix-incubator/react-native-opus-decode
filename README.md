@@ -5,13 +5,13 @@ Opus Decode
 ## Installation
 
 ```sh
-npm install react-native-opus-decode
+npm install @wix/react-native-opus-decode
 ```
 
 ## Usage
 
 ```js
-import { decodeOpus } from 'react-native-opus-decode';
+import { decodeOpus } from '@wix/react-native-opus-decode';
 
 // ...
 

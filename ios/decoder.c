@@ -131,7 +131,7 @@ static void make_wav_header(unsigned char _dst[44],ogg_int64_t _duration){
   }
 }
 
-int decodeOpus(const char *_argv, char * fileNameOut){
+int decodeOpus(const char *fileNameIn, char * fileNameOut){
   OggOpusFile  *of;
   FILE *outputFile;
   ogg_int64_t   duration;
@@ -142,11 +142,11 @@ int decodeOpus(const char *_argv, char * fileNameOut){
 
   is_ssl=0;
 
-  of=op_open_file(_argv,&ret);
+  of=op_open_file(fileNameIn,&ret);
   outputFile = fopen(fileNameOut, "wb");
-  
+
   if(of==NULL){
-    fprintf(stderr,"Failed to open file '%s': %i\n",_argv,ret);
+    fprintf(stderr,"Failed to open file '%s': %i\n",fileNameIn,ret);
     return EXIT_FAILURE;
   }
   duration=0;
@@ -202,7 +202,7 @@ int decodeOpus(const char *_argv, char * fileNameOut){
         continue;
       }
       else if(ret<0){
-        fprintf(stderr,"\nError decoding '%s': %i\n",_argv,ret);
+        fprintf(stderr,"\nError decoding '%s': %i\n",fileNameIn,ret);
         if(is_ssl)fprintf(stderr,"Possible truncation attack?\n");
         ret=EXIT_FAILURE;
         break;
