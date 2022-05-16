@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { decodeOpus } from 'react-native-opus-decode';
+import { decodeOpus } from '@wix/react-native-opus-decode';
 
 export default function App() {
   const [result, setResult] = React.useState<string | undefined>();
