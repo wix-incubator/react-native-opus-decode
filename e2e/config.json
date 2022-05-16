@@ -1,0 +1,9 @@
+{
+    "maxWorkers": 1,
+    "testTimeout": 120000,
+    "transform": {
+      "\\.tsx?$": "ts-jest"
+    },
+    "reporters": ["detox/runners/jest/streamlineReporter"],
+    "verbose": true
+}
