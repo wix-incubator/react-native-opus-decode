@@ -15,7 +15,6 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* OpusDecodeExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OpusDecodeExampleTests.m */; };
-		4E08493E28084822006721BA /* File.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 4E08493D28084822006721BA /* File.ogg */; };
 		6EE09AA3E5904D038B4ED52E /* libPods-OpusDecodeExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 612E64CAFB7E443BD1310C0D /* libPods-OpusDecodeExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -51,7 +50,6 @@
 		2D02E47B1E0B4A5D006451C7 /* OpusDecodeExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpusDecodeExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* OpusDecodeExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpusDecodeExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31635A2845298830990D2E58 /* Pods-OpusDecodeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpusDecodeExample.release.xcconfig"; path = "Target Support Files/Pods-OpusDecodeExample/Pods-OpusDecodeExample.release.xcconfig"; sourceTree = "<group>"; };
-		4E08493D28084822006721BA /* File.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = File.ogg; path = ../../ios/File.ogg; sourceTree = "<group>"; };
 		4EDDB5F32807EC6D00B353DF /* libreact-native-opus-decode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-opus-decode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDDB5F52808198A00B353DF /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = ../../ios/Ogg.framework; sourceTree = "<group>"; };
 		612E64CAFB7E443BD1310C0D /* libPods-OpusDecodeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpusDecodeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +154,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				4E08493D28084822006721BA /* File.ogg */,
 				13B07FAE1A68108700A75B9A /* OpusDecodeExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* OpusDecodeExampleTests */,
@@ -318,7 +315,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E08493E28084822006721BA /* File.ogg in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
