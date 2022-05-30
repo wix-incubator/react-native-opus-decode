@@ -1,6 +1,6 @@
 {
   "name": "react-native-opus-decode",
-  "version": "0.20.2",
+  "version": "0.21.0",
   "homepage": "https://github.com/wix-incubator/react-native-opus-decode",
   "description": "Opus Decode",
   "main": "lib/commonjs/index",
@@ -21,6 +21,7 @@
     "!**/__mocks__"
   ],
   "scripts": {
+    "build": "./scripts/build.sh",
     "test": "./scripts/test.sh",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",

@@ -4,15 +4,18 @@ We want this community to be friendly and respectful to each other. Please follo
 
 ## Development workflow
 
-To get started with the project, run `yarn` in the root directory to install the required dependencies for each package:
-
+These 3 commands should get you going:
 ```sh
-yarn
+yarn install
+yarn build
+yarn test
 ```
 
 > While it's possible to use [`npm`](https://github.com/npm/cli), the tooling is built around [`yarn`](https://classic.yarnpkg.com/), so you'll have an easier time if you use `yarn` for development.
 
 While developing, you can run the [example app](/example/) to test your changes. Any changes you make in your library's JavaScript code will be reflected in the example app without a rebuild. If you change any native code, then you'll need to rebuild the example app.
+
+**Important** CI test is currently disabled due to CI infra issues, please make sure to run the test locally before submitting PRs.
 
 To start the packager:
 
