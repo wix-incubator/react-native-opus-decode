@@ -9,6 +9,6 @@ else
   else
     react-native run-ios --simulator --verbose "iPhone 13"
   fi
-  detox test
   cd ..
+  detox test
 fi

@@ -3,22 +3,23 @@
   "runnerConfig": "e2e/config.json",
   "skipLegacyWorkersInjection": true,
   "devices": {
-  "simulator": {
-    "type": "ios.simulator",
-      "device": {
-      "type": "iPhone 12 Pro Max"
+    "simulator": {
+      "type": "ios.simulator",
+        "device": {
+        "type": "iPhone 12 Pro Max"
+      }
     }
-  }
-},
+  },
   "apps": {
-    "ios.release": {
+    "ios.debug": {
       "type": "ios.app",
-      "binaryPath": "./example/ios/DerivedData/Build/Products/Debug-iphonesimulator/OpusDecodeExample.app"}
+      "binaryPath": "./example/ios/DerivedData/Build/Products/Debug-iphonesimulator/OpusDecodeExample.app"
+    }
   },
   "configurations": {
-  "ios.sim.release": {
-    "device": "simulator",
-      "app": "ios.release"
+    "ios.sim.debug": {
+      "device": "simulator",
+      "app": "ios.debug"
+    }
   }
-}
 }
