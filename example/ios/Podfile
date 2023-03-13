@@ -6,9 +6,7 @@ project 'OpusDecodeExample.xcodeproj'
 
 target 'OpusDecodeExample' do
   config = use_native_modules!
-  use_react_native!(:path => config["reactNativePath"])
-
+  use_react_native!(:path => config[:reactNativePath])
   pod 'react-native-opus-decode', :path => '../../react-native-opus-decode.podspec'
   pod 'RNFS', :path => '../node_modules/react-native-fs'
-
 end
