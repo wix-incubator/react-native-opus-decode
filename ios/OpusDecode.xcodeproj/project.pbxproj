@@ -52,7 +52,6 @@
 		4EDDB5ED2807EA4E00B353DF /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
 		4EDDB5EE2807EA4E00B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
 		4EDDB5F02807EAE000B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
-		4EDDB5F12807EAE000B353DF /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* OpusDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpusDecode.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* OpusDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpusDecode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,7 +147,6 @@
 				4EDDB5CD2807EA3A00B353DF /* opus */,
 				4EDDB5D72807EA3A00B353DF /* opusfile */,
 				4EDDB5F02807EAE000B353DF /* decoder.c */,
-				4EDDB5F12807EAE000B353DF /* decoder.h */,
 				B3E7B5881CC2AC0600A0062D /* OpusDecode.h */,
 				B3E7B5891CC2AC0600A0062D /* OpusDecode.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
