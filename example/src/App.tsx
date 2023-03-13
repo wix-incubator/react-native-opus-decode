@@ -12,12 +12,16 @@ export default function App() {
     );
   }, []);
 
-  return (
-    <View style={styles.container}>
-      <Text testID={'DECODE_RESULT'}>{result ? 'SUCCESS' : ''}</Text>
-      <Text testID={'DECODE_OUTPUT'}>{result}</Text>
-    </View>
-  );
+  if (result) {
+    return (
+      <View style={styles.container}>
+        <Text testID={'DECODE_RESULT'}>{'SUCCESS'}</Text>
+        <Text testID={'DECODE_OUTPUT'}>{result}</Text>
+      </View>
+    );
+  } else {
+    return <View />;
+  }
 }
 
 const styles = StyleSheet.create({

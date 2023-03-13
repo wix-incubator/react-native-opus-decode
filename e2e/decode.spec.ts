@@ -1,4 +1,4 @@
-import { expect, device, element, by, init, cleanup } from 'detox';
+import { waitFor, device, element, by, init, cleanup } from 'detox';
 import fs from 'fs';
 import jestExpect from 'expect';
 
@@ -15,7 +15,9 @@ describe('React Native Opus Decode', () => {
   });
 
   it('should decode', async () => {
-    await expect(element(by.id('DECODE_RESULT'))).toBeVisible();
+    await waitFor(element(by.id('DECODE_RESULT')))
+      .toBeVisible()
+      .withTimeout(5000);
     await jestExpect(await getDecodedFileSize()).toEqual(
       EXPECTED_DECODED_FILE_SIZE
     );
