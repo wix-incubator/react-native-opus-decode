@@ -1,6 +1,6 @@
 {
   "name": "react-native-opus-decode",
-  "version": "0.22.4",
+  "version": "0.22.5",
   "homepage": "https://github.com/wix-incubator/react-native-opus-decode",
   "description": "Opus Decode",
   "main": "lib/commonjs/index",
