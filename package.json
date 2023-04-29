@@ -124,5 +124,6 @@
   },
   "dependencies": {
     "react-native-fs": "^2.19.0"
-  }
+  },
+  "packageManager": "yarn@3.5.0"
 }
