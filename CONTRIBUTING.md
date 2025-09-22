@@ -50,6 +50,51 @@ yarn test
 
 To edit the Objective-C files, open `example/ios/OpusDecodeExample.xcworkspace` in XCode and find the source files at `Pods > Development Pods > react-native-opus-decode`.
 
+### Building the Opus XCFramework
+
+This library vendors the Opus codec as a Git submodule in third_party/opus.
+The iOS build uses a precompiled Opus.xcframework under ios/opus/. If you need to update or rebuild it:
+
+#### Prerequisites
+
+* Xcode + Xcode Command Line Tools
+* Homebrew packages:
+
+```
+brew install autoconf automake libtool pkg-config
+```
+
+#### Setup Submodule
+
+```
+git submodule update --init --recursive
+```
+
+#### Build XCFramework
+
+Run the script:
+
+```
+./scripts/build-opus-xcframework.sh
+```
+
+This will:
+
+* Build Opus for iOS device (arm64) and iOS simulator (arm64, and optionally x86_64 if enabled)
+* Package them into ios/opus/Opus.xcframework
+
+If your team has Intel Macs, uncomment the x86_64 simulator build in the script to include that slice.
+
+#### Submodule cleanliness
+
+The build script copies the Opus source into a temp directory before running autogen.sh, so the submodule stays clean.
+If you ever see it marked dirty, you can reset with:
+
+```
+git -C third_party/opus reset --hard
+git -C third_party/opus clean -fdx
+```
+
 ### Commit message convention
 
 We follow the [conventional commits specification](https://www.conventionalcommits.org/en) for our commit messages:
